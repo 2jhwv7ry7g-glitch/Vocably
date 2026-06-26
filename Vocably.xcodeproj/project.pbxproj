@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0347B2BBCAAD22207BE2095A /* VocablyPresentation in Frameworks */ = {isa = PBXBuildFile; productRef = 1F3A7F17CEEB026DB77C668A /* VocablyPresentation */; };
+		17B491ECD14940BC00378184 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32BE0F941A2BF0B0783182B /* Components.swift */; };
+		228A2CE2AEB34F092509F2BE /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB251DF4B8C7F97F4F478213 /* OnboardingView.swift */; };
+		3761B095121973D606AFB3C0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400E28F7CB11C961C488FF21 /* HomeView.swift */; };
+		43C06CBFC669415C7266668D /* TagSuggester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E280C52181045D1DC78C6AA /* TagSuggester.swift */; };
+		484E38775A9AD95FB6E0C4BB /* VocablyServices in Frameworks */ = {isa = PBXBuildFile; productRef = 65869138A2EB04E1A9A52908 /* VocablyServices */; };
+		57129F1A8C74F36DD7B99016 /* BookScanService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC126BBA9B1A79EE119C67 /* BookScanService.swift */; };
+		5EDE2D2964A1022D979779F9 /* LiveSpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01DB6CD3497578F3DEA621 /* LiveSpeechService.swift */; };
+		69190FE91C2DB4688709EA19 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 378D79D98E36FBE47A0B984C /* PrivacyInfo.xcprivacy */; };
+		6F71870AB8E34B31418ADA19 /* StudyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF2DD6098FC0E5630FB50A1 /* StudyView.swift */; };
+		7023150B54B2FEA9EB0E07F0 /* TranslationBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212D0C886BABAD4C549AB021 /* TranslationBridge.swift */; };
+		8505C80DD24C5BB0115760B6 /* SessionCommit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDEF84D478BB577FCD14499 /* SessionCommit.swift */; };
+		8B9B65541EB1F507220C4582 /* SRSEngine in Frameworks */ = {isa = PBXBuildFile; productRef = BAA21ED8F35D5F9347EB92EC /* SRSEngine */; };
+		92275589C7AFECA4CA15D610 /* WordDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8607F5AB4FF94309F8A3C8 /* WordDetailView.swift */; };
+		9A63D3F80222584D2CE5B898 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE948D81C2DA32FFF8B9748 /* LibraryView.swift */; };
+		A4F1377CA645FDD2F020426F /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE9F74F820090557BD6D69 /* Translator.swift */; };
+		A75D7DD3D72D19E7BF3905F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846E5717B58E84A6F3C5387D /* Assets.xcassets */; };
+		B4797FDA4FA1B1AB0E1A4E28 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40304DC2BAC6D6E6F78869F5 /* ScanView.swift */; };
+		BD296215818F400BF8DCFE26 /* AIDeckService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C00213C5AEFDF42B887D284 /* AIDeckService.swift */; };
+		BDFCF7CCC0CBA39A118EDD6B /* AddWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D3216E47017F2374BE5010 /* AddWordView.swift */; };
+		CE1DA68A307B9CA4B1BE6912 /* VocablyDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 2A370E74D1B985993E701C63 /* VocablyDomain */; };
+		D7DC50F7F40404DCFDA396B5 /* LanguageTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7261194AE810FD2620EC571 /* LanguageTextField.swift */; };
+		E05AB39AD299D9A5F3DA93E1 /* SwiftDataRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC72CBED0E25E176C253914 /* SwiftDataRepositories.swift */; };
+		E683C27950CAE9BAAD2D0132 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBA01F3289133A8A911251C /* Theme.swift */; };
+		E7AA688ECD5237EE5FFB19F6 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99F42929AF5C95A380CF7BA /* ProfileView.swift */; };
+		EC0F9BE91C41755B27E051AA /* AIStudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F63CF4AB78694F0F037551 /* AIStudioView.swift */; };
+		ED6C8CFF8E7B494E5245E685 /* AddDeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77038766439A3F92F98408C7 /* AddDeckView.swift */; };
+		F25AB523B8B28F408B3C9A84 /* LocalTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320ECACA233EE12FE7BFACE6 /* LocalTranslator.swift */; };
+		FC4B3655376E28C03177F800 /* VocablyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830D76B1DBEE2091895BF1C2 /* VocablyApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0EDEF84D478BB577FCD14499 /* SessionCommit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCommit.swift; sourceTree = "<group>"; };
+		0FE948D81C2DA32FFF8B9748 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		212D0C886BABAD4C549AB021 /* TranslationBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationBridge.swift; sourceTree = "<group>"; };
+		2FBA01F3289133A8A911251C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		320ECACA233EE12FE7BFACE6 /* LocalTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTranslator.swift; sourceTree = "<group>"; };
+		378D79D98E36FBE47A0B984C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		3E280C52181045D1DC78C6AA /* TagSuggester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagSuggester.swift; sourceTree = "<group>"; };
+		400E28F7CB11C961C488FF21 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		40304DC2BAC6D6E6F78869F5 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		477DA13AACEF848124A5B5CB /* Vocably.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Vocably.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		486185320030D4AFA85119AA /* VocablyCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = VocablyCore; path = Packages/VocablyCore; sourceTree = SOURCE_ROOT; };
+		51D3216E47017F2374BE5010 /* AddWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordView.swift; sourceTree = "<group>"; };
+		65EE9F74F820090557BD6D69 /* Translator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
+		6C00213C5AEFDF42B887D284 /* AIDeckService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIDeckService.swift; sourceTree = "<group>"; };
+		77038766439A3F92F98408C7 /* AddDeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeckView.swift; sourceTree = "<group>"; };
+		7EEC126BBA9B1A79EE119C67 /* BookScanService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookScanService.swift; sourceTree = "<group>"; };
+		830D76B1DBEE2091895BF1C2 /* VocablyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocablyApp.swift; sourceTree = "<group>"; };
+		846E5717B58E84A6F3C5387D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BC72CBED0E25E176C253914 /* SwiftDataRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataRepositories.swift; sourceTree = "<group>"; };
+		A32BE0F941A2BF0B0783182B /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		A99F42929AF5C95A380CF7BA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		AEF2DD6098FC0E5630FB50A1 /* StudyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyView.swift; sourceTree = "<group>"; };
+		BF01DB6CD3497578F3DEA621 /* LiveSpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSpeechService.swift; sourceTree = "<group>"; };
+		C0F63CF4AB78694F0F037551 /* AIStudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIStudioView.swift; sourceTree = "<group>"; };
+		D7261194AE810FD2620EC571 /* LanguageTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTextField.swift; sourceTree = "<group>"; };
+		EB251DF4B8C7F97F4F478213 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		EB8607F5AB4FF94309F8A3C8 /* WordDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EB8382F2B8D3658713C46B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE1DA68A307B9CA4B1BE6912 /* VocablyDomain in Frameworks */,
+				8B9B65541EB1F507220C4582 /* SRSEngine in Frameworks */,
+				484E38775A9AD95FB6E0C4BB /* VocablyServices in Frameworks */,
+				0347B2BBCAAD22207BE2095A /* VocablyPresentation in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05D984FBEC05EBEDEB7F0BB7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6C00213C5AEFDF42B887D284 /* AIDeckService.swift */,
+				7EEC126BBA9B1A79EE119C67 /* BookScanService.swift */,
+				BF01DB6CD3497578F3DEA621 /* LiveSpeechService.swift */,
+				320ECACA233EE12FE7BFACE6 /* LocalTranslator.swift */,
+				3E280C52181045D1DC78C6AA /* TagSuggester.swift */,
+				65EE9F74F820090557BD6D69 /* Translator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		05FD3D34022FCCE252EDAAD9 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				0EDEF84D478BB577FCD14499 /* SessionCommit.swift */,
+				8BC72CBED0E25E176C253914 /* SwiftDataRepositories.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		22F93F6F02C171A50AE24B78 = {
+			isa = PBXGroup;
+			children = (
+				A9858FF061756B7415DA0735 /* Packages */,
+				CAB44E4A5497E13787B9D6F7 /* Vocably */,
+				C01F5E34F2EAA207F9FE5368 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26C8BD127FCDF592C5BA47AC /* Study */ = {
+			isa = PBXGroup;
+			children = (
+				AEF2DD6098FC0E5630FB50A1 /* StudyView.swift */,
+			);
+			path = Study;
+			sourceTree = "<group>";
+		};
+		47CCF7643BC26299E943C02D /* AddWord */ = {
+			isa = PBXGroup;
+			children = (
+				51D3216E47017F2374BE5010 /* AddWordView.swift */,
+				212D0C886BABAD4C549AB021 /* TranslationBridge.swift */,
+			);
+			path = AddWord;
+			sourceTree = "<group>";
+		};
+		4DBAC59A299BC887CCF70FB3 /* AIStudio */ = {
+			isa = PBXGroup;
+			children = (
+				C0F63CF4AB78694F0F037551 /* AIStudioView.swift */,
+			);
+			path = AIStudio;
+			sourceTree = "<group>";
+		};
+		82DC5F8FB113A728DE075720 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A99F42929AF5C95A380CF7BA /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		A0407AC2CFF04D53BB877136 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				830D76B1DBEE2091895BF1C2 /* VocablyApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A5C387233AE62EA25CB0F702 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				400E28F7CB11C961C488FF21 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A7C1FB47ADE27853A0F22E06 /* WordDetail */ = {
+			isa = PBXGroup;
+			children = (
+				EB8607F5AB4FF94309F8A3C8 /* WordDetailView.swift */,
+			);
+			path = WordDetail;
+			sourceTree = "<group>";
+		};
+		A9858FF061756B7415DA0735 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				486185320030D4AFA85119AA /* VocablyCore */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		B3A75AB64A769FA6883EB163 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				40304DC2BAC6D6E6F78869F5 /* ScanView.swift */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		B979790CF979DC3E5AC7F634 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EB251DF4B8C7F97F4F478213 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		B9EA4BC2211B840C119F9D28 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				77038766439A3F92F98408C7 /* AddDeckView.swift */,
+				0FE948D81C2DA32FFF8B9748 /* LibraryView.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		C01F5E34F2EAA207F9FE5368 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				477DA13AACEF848124A5B5CB /* Vocably.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAB44E4A5497E13787B9D6F7 /* Vocably */ = {
+			isa = PBXGroup;
+			children = (
+				A0407AC2CFF04D53BB877136 /* App */,
+				FF214986E7F97D07737AC2D7 /* DesignSystem */,
+				FF57D16084AA1E67305890F8 /* Features */,
+				05FD3D34022FCCE252EDAAD9 /* Persistence */,
+				E432F669B8F9768E204C1C68 /* Resources */,
+				05D984FBEC05EBEDEB7F0BB7 /* Services */,
+			);
+			path = Vocably;
+			sourceTree = "<group>";
+		};
+		E432F669B8F9768E204C1C68 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				846E5717B58E84A6F3C5387D /* Assets.xcassets */,
+				378D79D98E36FBE47A0B984C /* PrivacyInfo.xcprivacy */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FF214986E7F97D07737AC2D7 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				A32BE0F941A2BF0B0783182B /* Components.swift */,
+				D7261194AE810FD2620EC571 /* LanguageTextField.swift */,
+				2FBA01F3289133A8A911251C /* Theme.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		FF57D16084AA1E67305890F8 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				47CCF7643BC26299E943C02D /* AddWord */,
+				4DBAC59A299BC887CCF70FB3 /* AIStudio */,
+				A5C387233AE62EA25CB0F702 /* Home */,
+				B9EA4BC2211B840C119F9D28 /* Library */,
+				B979790CF979DC3E5AC7F634 /* Onboarding */,
+				82DC5F8FB113A728DE075720 /* Profile */,
+				B3A75AB64A769FA6883EB163 /* Scan */,
+				26C8BD127FCDF592C5BA47AC /* Study */,
+				A7C1FB47ADE27853A0F22E06 /* WordDetail */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE9D263A6345EDCEC69F9E8E /* Vocably */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFD48406AC999693C758BFCA /* Build configuration list for PBXNativeTarget "Vocably" */;
+			buildPhases = (
+				2B6A8CDD001F53C979EDFEF4 /* Sources */,
+				894EC5BAEF6D48A5A3FA5557 /* Resources */,
+				9EB8382F2B8D3658713C46B2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vocably;
+			packageProductDependencies = (
+				2A370E74D1B985993E701C63 /* VocablyDomain */,
+				BAA21ED8F35D5F9347EB92EC /* SRSEngine */,
+				65869138A2EB04E1A9A52908 /* VocablyServices */,
+				1F3A7F17CEEB026DB77C668A /* VocablyPresentation */,
+			);
+			productName = Vocably;
+			productReference = 477DA13AACEF848124A5B5CB /* Vocably.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AF80CF91109B5624F13411D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 1EB7C5DA089CF13E78BBBE99 /* Build configuration list for PBXProject "Vocably" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 22F93F6F02C171A50AE24B78;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				844D937C9FDBA48A85731388 /* XCLocalSwiftPackageReference "Packages/VocablyCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C01F5E34F2EAA207F9FE5368 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE9D263A6345EDCEC69F9E8E /* Vocably */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		894EC5BAEF6D48A5A3FA5557 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75D7DD3D72D19E7BF3905F2 /* Assets.xcassets in Resources */,
+				69190FE91C2DB4688709EA19 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B6A8CDD001F53C979EDFEF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD296215818F400BF8DCFE26 /* AIDeckService.swift in Sources */,
+				EC0F9BE91C41755B27E051AA /* AIStudioView.swift in Sources */,
+				ED6C8CFF8E7B494E5245E685 /* AddDeckView.swift in Sources */,
+				BDFCF7CCC0CBA39A118EDD6B /* AddWordView.swift in Sources */,
+				57129F1A8C74F36DD7B99016 /* BookScanService.swift in Sources */,
+				17B491ECD14940BC00378184 /* Components.swift in Sources */,
+				3761B095121973D606AFB3C0 /* HomeView.swift in Sources */,
+				D7DC50F7F40404DCFDA396B5 /* LanguageTextField.swift in Sources */,
+				9A63D3F80222584D2CE5B898 /* LibraryView.swift in Sources */,
+				5EDE2D2964A1022D979779F9 /* LiveSpeechService.swift in Sources */,
+				F25AB523B8B28F408B3C9A84 /* LocalTranslator.swift in Sources */,
+				228A2CE2AEB34F092509F2BE /* OnboardingView.swift in Sources */,
+				E7AA688ECD5237EE5FFB19F6 /* ProfileView.swift in Sources */,
+				B4797FDA4FA1B1AB0E1A4E28 /* ScanView.swift in Sources */,
+				8505C80DD24C5BB0115760B6 /* SessionCommit.swift in Sources */,
+				6F71870AB8E34B31418ADA19 /* StudyView.swift in Sources */,
+				E05AB39AD299D9A5F3DA93E1 /* SwiftDataRepositories.swift in Sources */,
+				43C06CBFC669415C7266668D /* TagSuggester.swift in Sources */,
+				E683C27950CAE9BAAD2D0132 /* Theme.swift in Sources */,
+				7023150B54B2FEA9EB0E07F0 /* TranslationBridge.swift in Sources */,
+				A4F1377CA645FDD2F020426F /* Translator.swift in Sources */,
+				FC4B3655376E28C03177F800 /* VocablyApp.swift in Sources */,
+				92275589C7AFECA4CA15D610 /* WordDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		48438D19C5C0306CEC1FBD41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Vocably;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.vocably;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BA2533D623885B8CC8B7326C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Vocably;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.vocably;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB8B15DB28361DF25AF645D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FEEABE966FC36879B8B75154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1EB7C5DA089CF13E78BBBE99 /* Build configuration list for PBXProject "Vocably" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB8B15DB28361DF25AF645D7 /* Debug */,
+				FEEABE966FC36879B8B75154 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AFD48406AC999693C758BFCA /* Build configuration list for PBXNativeTarget "Vocably" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA2533D623885B8CC8B7326C /* Debug */,
+				48438D19C5C0306CEC1FBD41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		844D937C9FDBA48A85731388 /* XCLocalSwiftPackageReference "Packages/VocablyCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/VocablyCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F3A7F17CEEB026DB77C668A /* VocablyPresentation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VocablyPresentation;
+		};
+		2A370E74D1B985993E701C63 /* VocablyDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VocablyDomain;
+		};
+		65869138A2EB04E1A9A52908 /* VocablyServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VocablyServices;
+		};
+		BAA21ED8F35D5F9347EB92EC /* SRSEngine */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SRSEngine;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4AF80CF91109B5624F13411D /* Project object */;
+}
