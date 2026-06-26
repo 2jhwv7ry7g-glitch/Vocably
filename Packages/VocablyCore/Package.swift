@@ -7,6 +7,12 @@ import PackageDescription
 // so the exact same code drops into the Xcode app later, behind the Live service impls.
 let package = Package(
     name: "VocablyCore",
+    platforms: [
+        // Apple platforms only: gives access to modern concurrency (AsyncStream, etc.).
+        // Windows/Linux builds ignore this and use the open-source toolchain defaults.
+        .macOS(.v13),
+        .iOS(.v17),
+    ],
     products: [
         .library(name: "VocablyDomain", targets: ["VocablyDomain"]),
         .library(name: "SRSEngine", targets: ["SRSEngine"]),

@@ -4,7 +4,8 @@ import Foundation
 public struct Deck: Identifiable, Codable, Sendable, Equatable {
     public var id: UUID
     public var name: String
-    public var languageCode: String         // e.g. "es"
+    public var languageCode: String         // word/front language, e.g. "es"
+    public var translationLanguageCode: String?  // back/translation language, e.g. "de" (nil = learner's native)
     public var level: String                // e.g. "A2"
     public var colorTokenName: String       // "primary" / "accent" / "rose" — the deck mark colour
     public var source: CardSource
@@ -15,6 +16,7 @@ public struct Deck: Identifiable, Codable, Sendable, Equatable {
         id: UUID = UUID(),
         name: String,
         languageCode: String,
+        translationLanguageCode: String? = nil,
         level: String = "",
         colorTokenName: String = "primary",
         source: CardSource = .manual,
@@ -24,6 +26,7 @@ public struct Deck: Identifiable, Codable, Sendable, Equatable {
         self.id = id
         self.name = name
         self.languageCode = languageCode
+        self.translationLanguageCode = translationLanguageCode
         self.level = level
         self.colorTokenName = colorTokenName
         self.source = source

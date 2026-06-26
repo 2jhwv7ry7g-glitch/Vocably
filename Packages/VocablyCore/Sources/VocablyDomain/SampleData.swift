@@ -21,15 +21,17 @@ public enum SampleData {
                 Card(term: "la mariposa", translation: "butterfly", ipa: "/ma.ɾiˈpo.sa/",
                      partOfSpeech: "noun · feminine", example: "Una mariposa azul cruzó el jardín.",
                      exampleTranslation: "A blue butterfly crossed the garden.",
+                     tags: ["animals", "nature"],
                      review: Review(due: days(-1), intervalDays: 30, ease: 2.6, reps: 6, masteryLevel: 3)),
                 Card(term: "el jardín", translation: "garden", partOfSpeech: "noun · masculine",
-                     example: "El jardín al amanecer.",
+                     example: "El jardín al amanecer.", tags: ["nature", "home"],
                      review: Review(due: days(0), intervalDays: 6, ease: 2.5, reps: 2, masteryLevel: 1)),
-                Card(term: "amanecer", translation: "dawn",
+                Card(term: "amanecer", translation: "dawn", tags: ["nature", "time"],
                      review: Review(due: days(0), intervalDays: 1, ease: 2.5, reps: 1, masteryLevel: 1)),
-                Card(term: "susurro", translation: "whisper",
+                Card(term: "susurro", translation: "whisper", tags: ["communication"],
                      review: Review(due: days(0), intervalDays: 0, ease: 2.5, reps: 0, masteryLevel: 0)),
                 Card(term: "la cuenta", translation: "the bill", example: "La cuenta, por favor.",
+                     tags: ["food", "travel"],
                      review: Review(due: days(-2), intervalDays: 15, ease: 2.5, reps: 3, masteryLevel: 2)),
             ]
         )
@@ -45,9 +47,9 @@ public enum SampleData {
             source: .ai,
             createdAt: days(-3),
             cards: [
-                Card(term: "el camarero", translation: "the waiter", example: "¿Nos atiende el camarero?", source: .ai),
-                Card(term: "pedir", translation: "to order", example: "Vamos a pedir unas tapas.", source: .ai),
-                Card(term: "la propina", translation: "the tip", example: "Dejé una buena propina.", source: .ai),
+                Card(term: "el camarero", translation: "the waiter", example: "¿Nos atiende el camarero?", tags: ["food", "people"], source: .ai),
+                Card(term: "pedir", translation: "to order", example: "Vamos a pedir unas tapas.", tags: ["food"], source: .ai),
+                Card(term: "la propina", translation: "the tip", example: "Dejé una buena propina.", tags: ["food", "money"], source: .ai),
             ]
         )
     }
