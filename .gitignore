@@ -1,0 +1,19 @@
+# Swift / SwiftPM
+.build/
+.swiftpm/
+Package.resolved
+*.o
+*.swiftmodule
+
+# Vocably CLI runtime data
+.vocably-cli-data/
+
+# Xcode (added once the Mac app exists)
+xcuserdata/
+*.xcuserstate
+DerivedData/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+
+# macOS / Windows cruft
+.DS_Store
+Thumbs.db
